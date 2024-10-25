@@ -26,7 +26,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ app.balady.gov.sa_url }}
+      url: ${{ balady.gov.sa_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
