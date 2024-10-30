@@ -1192,16 +1192,7 @@
                                             </div>
                                         </div>
                                         <script type="text/javascript">
-                                            var CaptchaUrl = '/Eservices/Health/Home/GetCaptchaImage?';
-
-                                            $("#img-captcha").click(function() {
-                                                resetCaptchaImage(btn);
-                                            });
-
-                                            function resetCaptchaImage(btn) {
-                                                d = new Date();
-                                                $(btn).parent().find("#img-captcha").attr("src", CaptchaUrl + d.getTime());
-                                            }
+                                            
 
                                             function refreshCapatcha(btn) {
                                                 resetCaptchaImage(btn);
