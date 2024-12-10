@@ -1,0 +1,300 @@
+
+/*general css*/
+/*font*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato|Roboto:400,700);
+
+@font-face {
+    font-family: 'Janna LT';
+    src: url('../fonts/Janna LT.eot');
+    src: url('../fonts/Janna LT.eot') format('embedded-opentype'), url('../fonts/Janna LT.ttf') format('truetype'), url('../fonts/Janna LT.svg#Janna LT') format('svg');
+}
+
+
+@font-face {
+    font-family: 'Gerta_Regular';
+    src: url('../fonts/GretaTextArabicRegular.ttf');
+    src: url('../fonts/GretaTextArabicRegular.ttf');
+    src: url('../fonts/GretaTextArabicRegular.ttf?#iefix') format('embedded-opentype'), url('../fonts/GretaTextArabicRegular.ttf') format('woff'), url('../fonts/GretaTextArabicRegular') format("opentype");
+}
+    @font-face {
+    font-family: 'Gerta_Bold';
+    src: url('../fonts/GretaTextArabicBold.ttf');
+    src: url('../fonts/GretaTextArabicBold.ttf');
+    src: url('../fonts/GretaTextArabicBold.ttf?#iefix') format('embedded-opentype'), url('../fonts/GretaTextArabicBold.ttf') format('woff'), url('../fonts/GretaTextArabicBold.ttf') format("opentype");
+}
+    
+    @font-face {
+    font-family: 'Gerta_light';
+    src: url('../fonts/GretaTextArabicLight.ttf');
+    src: url('../fonts/GretaTextArabicLight.ttf');
+    src: url('../fonts/GretaTextArabicLight.ttf?#iefix') format('embedded-opentype'), url('../fonts/GretaTextArabicLight.ttf') format('woff'), url('../fonts/GretaTextArabicLight.ttf') format("opentype");
+}
+    
+    @font-face {
+    font-family: 'Gerta_medium';
+    src: url('../fonts/GretaTextArabicMedium.ttf');
+    src: url('../fonts/GretaTextArabicMedium.ttf');
+    src: url('../fonts/GretaTextArabicMedium.ttf?#iefix') format('embedded-opentype'), url('../fonts/GretaTextArabicMedium.ttf') format('woff'), url('../fonts/GretaTextArabicMedium.ttf') format("opentype");
+}
+
+
+@font-face {
+  font-family: 'tanseek-modern';
+  src: url('../fonts/tanseek-modern-pro-arabic-medium.ttf');
+}
+@font-face {
+  font-family: 'tanseek-bold';
+  src: url('../fonts/tanseek-modern-pro-arabic-bold.ttf');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+.card {
+  width: 7.5cm;
+  height: 11cm;
+  /* margin: 50px auto; */
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0px;
+  border: 1px solid #486b00;
+  overflow: hidden;
+  position: relative;
+  box-shadow: #bbb 6px 6px 10px 0;
+  
+}
+/* .card::after {
+  content: "";
+  background: url(../images/logobg.png);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 32px;
+  right: 0;
+  position: absolute;
+  z-index: 1;   
+  background-repeat: no-repeat;
+  background-position: bottom center;
+} */
+
+.card-no-wm::after {
+    background:#fff;
+}
+
+.logo{
+  text-align: center;
+  /* border-bottom: 1px solid #ddd; */
+}
+.logo img{
+  width: 190px;
+  margin: 5px auto 11px;
+}
+
+.identity{
+  padding: 0 2mm;
+  height: 50px;
+}
+.identity .photo, .identity .qrcode{
+  width: 50%;
+  float: left;
+}
+.identity .photo{
+  text-align: right;
+}
+.identity .qrcode{
+  text-align: left;
+  height: 50px;
+  line-height: 50px;
+}
+
+.identity .photo img{
+  width: 75px;
+  height: 75px;
+  background-color: #fff;
+  border: 2px solid #72a900;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.identity .qrcode img{
+  width: 50px;
+  height: 50px;
+}
+
+.info{
+  padding: 5px 6px 5px;
+  border: 2px solid #a7a3a3;
+  margin: 0 6px;
+  border-radius: 8px;
+}
+
+.info ul{
+  list-style: none;
+  margin-bottom:0;
+}
+
+.info ul li{
+  text-align: right;
+  direction: rtl;
+  font-size: 19px;
+  font-family: 'tanseek-bold','Janna LT', tahoma, sans-serif;
+  line-height: 1.3;
+  font-weight: 500;
+  color: #000;
+}
+.info ul li span.title{
+  display: inline-block;
+  width: 85px;
+}
+
+.footer{
+    text-align: center;
+    direction: rtl;
+    font-size: 10px;
+    font-family: 'tanseek-modern','Janna LT', tahoma, sans-serif;
+    font-weight: 600;
+    background: #72a900;
+    line-height: 6mm;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+}
+
+.header {
+    text-align: center;
+    direction: rtl;
+    font-size: 14px;
+    font-family: 'tanseek-modern','Janna LT', tahoma, sans-serif;
+    line-height: 22px;
+    font-weight: 600;
+    background: #486b00 ;
+    line-height: 45px;
+    color: #fff;
+}
+
+.identity.single .photo{
+  width: auto;
+  float: none;
+}
+.identity.single .photo{
+  text-align: center;
+}
+
+
+
+/*Start Card Back */
+
+.back{
+  border-top: 20px solid #486b00;
+  border-bottom: 20px solid #486b00;
+  position: relative;
+}
+
+.back::before{
+  content: "";
+  opacity: 1;
+  top: 0px;
+  left: -10px;
+  width: 200px;
+  height: 15px;
+  position: absolute;
+  z-index: 1;
+  background: #486b00;
+  transform: skewX(-45deg);
+}
+/*.back::after{
+  content: "";
+  opacity: 1;
+  top: 374px;
+  left: 110px;
+  width: 200px;
+  height: 15px;
+  position: absolute;
+  z-index: 1;
+  background: #486b00;
+  transform: skewX(-45deg);
+}*/
+.back .info{
+  margin-top: 30px;
+}
+.back .info ul li{
+  line-height: 30px;
+}
+
+.back .qrcode{
+    padding: 10px;
+    height: 135px;
+    text-align: center;
+    line-height: 115px;
+}
+.back .qrcode img{
+    width: 110px;
+    height: 110px;
+}
+
+.maintitle{
+  text-align:center;
+  font-weight:600;
+  font-family: 'tanseek-modern','Janna LT', tahoma, sans-serif;
+  font-size:15px;
+
+}
+
+.maintitle h5{
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'tanseek-bold','Janna LT', tahoma, sans-serif;
+    color: #006a47;
+    font-size: 28px;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  border: 0;
+  border-top: 2px solid #a7a3a3;
+}
+
+/*.maintitle .double-border{
+      display: inline-block;
+  }
+  
+  .maintitle .double-border::before {
+      background: #b9b9b9 none repeat scroll 0 0;
+      content: "";
+      display: block;
+      height: 1.3px;
+  }
+  
+  .maintitle .double-border::before  {
+      width: 15mm;
+  }
+  
+  
+  .maintitle .double-border::before{
+      margin-left: auto;
+      margin-right: auto;
+  }*/
+
+
+
+  @media print {
+    .card{
+      border: none;
+      box-shadow: none;
+    }
+ }
+
+  
+
