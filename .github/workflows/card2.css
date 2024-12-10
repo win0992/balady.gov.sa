@@ -1,0 +1,45 @@
+.card{
+  width: 7.5cm;
+  height: 20.5cm;
+}
+.logo{
+  margin-top: 5px;
+}
+
+.identity.single .photo{
+  width: auto;
+  float: none;
+  text-align: center;
+}
+.info{
+  margin-top: 5px;
+}
+
+.info h5{
+  font-size: 19px;
+  margin: 0;
+  text-align: right;
+  font-family: 'tanseek-bold','Janna LT', tahoma, sans-serif;
+  color: #006a47;
+  margin-bottom: 3px;
+}
+.info ul li span.title {
+  color: #767676;
+}
+hr {
+  border-top: 1px solid #c5c5c5;
+}
+.info ul li{
+  font-size: 18px;
+}
+
+.info ul li span.title {
+  width: 24mm;
+}
+.info ul li{
+  line-height: 1.5;
+}
+
+.identity {
+  height: 75px;
+}
